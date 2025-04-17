@@ -1,5 +1,7 @@
 {
-    "perl.excludePaths": [
-      "cpanfile"
-    ]
-  }
+  "perlnavigator.perlPath": "/usr/bin/perl",
+  "perlnavigator.includePaths": [
+    "lib",
+    "local/lib/perl5"
+  ],
+}

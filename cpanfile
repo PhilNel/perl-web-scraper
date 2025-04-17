@@ -1,2 +1,2 @@
-requires 'LWP::UserAgent', '== 6.78';
-requires 'LWP::Protocol::https', '== 6.14';
+requires 'Mojolicious', '== 9.39';  # Mojo::DOM lives here
+requires 'Moo', '== 2.005005';
