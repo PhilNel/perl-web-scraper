@@ -1,8 +1,10 @@
-package DuckDuckGoParser;
+package Scraper::Parser::DuckDuckGoParser;
 
 use Mojo::DOM;
 use Moo;
 use Carp;
+
+with 'Scraper::Parser::JobParser';
 
 sub parse_jobs {
     my ($self, $html_content) = @_;

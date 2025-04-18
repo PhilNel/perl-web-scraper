@@ -1,6 +1,8 @@
-package ConsoleSink;
+package Scraper::Sink::ConsoleSink;
 
 use Moo;
+
+with 'Scraper::Sink::JobSink';
 
 sub write_jobs {
     my ($self, @jobs) = @_;

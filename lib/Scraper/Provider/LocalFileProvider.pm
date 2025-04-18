@@ -1,7 +1,9 @@
-package LocalFileProvider;
+package Scraper::Provider::LocalFileProvider;
 
 use Moo;
 use Carp;
+
+with 'Scraper::Provider::JobProvider';
 
 has file_path => (
     is => 'ro',

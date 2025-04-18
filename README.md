@@ -38,3 +38,4 @@ make parse
 - Moo — Lightweight object system for clean OOP
 - Mojo::DOM — HTML parsing
 - Carp — Better error reporting
+- Role::Tiny — Composable interface-style roles for enforcing structure across components
