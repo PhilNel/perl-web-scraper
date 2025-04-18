@@ -4,6 +4,8 @@ A modular and extensible scraping framework written in Perl. This project uses c
 
 It is designed to be both locally testable and cloud-deployable (e.g., on AWS Lambda), with the ability to fetch, parse, and store job listings or other structured content from web sources.
 
+This component pairs with [node-web-fetcher](https://github.com/PhilNel/node-web-fetcher).
+
 ## 🛠 Installation
 
 All dependencies are vendored locally. You do not need to install system-wide Perl modules.

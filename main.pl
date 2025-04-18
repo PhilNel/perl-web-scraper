@@ -4,12 +4,15 @@ use FindBin;
 use lib "$FindBin::Bin/lib";
 use lib "$FindBin::Bin/local/lib/perl5";
 
+use Scraper::Config;
 use Scraper::Provider::LocalFileProvider;
 use Scraper::Parser::DuckDuckGoParser;
 use Scraper::Sink::ConsoleSink;
 
+my $config = Scraper::Config->new;
+
 my $file_provider = Scraper::Provider::LocalFileProvider->new(
-    file_path => "$FindBin::Bin/../node-web-fetcher/src/rendered.html"
+    file_path => $config->html_path
 );
 
 my $html_content = $file_provider->get_html;
