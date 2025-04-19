@@ -1,0 +1,1 @@
+{"name":"HTTP::Date","pathname":"O/OA/OALDERS/HTTP-Date-6.06.tar.gz","version":6.06,"dist":"HTTP-Date-6.06","target":"HTTP::Date","provides":{"HTTP::Date":{"file":"lib/HTTP/Date.pm","version":6.06}}}
