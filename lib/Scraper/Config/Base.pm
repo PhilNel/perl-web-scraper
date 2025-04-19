@@ -4,7 +4,7 @@ use Moo;
 use Dotenv;
 
 BEGIN {
-    Dotenv->load;
+    Dotenv->load('.env') if -e '.env';
 }
 
 1;

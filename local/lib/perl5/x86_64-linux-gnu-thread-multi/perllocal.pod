@@ -1,180 +1,4 @@
-=head2 Thu Apr 17 13:33:56 2025: C<Module> L<Mojolicious|Mojolicious>
-
-=over 4
-
-=item *
-
-C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
-
-=item *
-
-C<LINKTYPE: dynamic>
-
-=item *
-
-C<VERSION: 9.39>
-
-=item *
-
-C<EXE_FILES: script/hypnotoad script/mojo script/morbo>
-
-=back
-
-=head2 Thu Apr 17 14:08:22 2025: C<Module> L<Moo|Moo>
-
-=over 4
-
-=item *
-
-C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
-
-=item *
-
-C<LINKTYPE: dynamic>
-
-=item *
-
-C<VERSION: 2.005005>
-
-=item *
-
-C<EXE_FILES: >
-
-=back
-
-=head2 Sat Apr 19 09:31:38 2025: C<Module> L<Devel::Symdump|Devel::Symdump>
-
-=over 4
-
-=item *
-
-C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
-
-=item *
-
-C<LINKTYPE: dynamic>
-
-=item *
-
-C<VERSION: 2.18>
-
-=item *
-
-C<EXE_FILES: >
-
-=back
-
-=head2 Sat Apr 19 09:31:40 2025: C<Module> L<Pod::Coverage|Pod::Coverage>
-
-=over 4
-
-=item *
-
-C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
-
-=item *
-
-C<LINKTYPE: dynamic>
-
-=item *
-
-C<VERSION: 0.23>
-
-=item *
-
-C<EXE_FILES: bin/pod_cover>
-
-=back
-
-=head2 Sat Apr 19 09:31:41 2025: C<Module> L<Test::Pod::Coverage|Test::Pod::Coverage>
-
-=over 4
-
-=item *
-
-C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
-
-=item *
-
-C<LINKTYPE: dynamic>
-
-=item *
-
-C<VERSION: 1.10>
-
-=item *
-
-C<EXE_FILES: >
-
-=back
-
-=head2 Sat Apr 19 09:31:42 2025: C<Module> L<Test::CPAN::Meta|Test::CPAN::Meta>
-
-=over 4
-
-=item *
-
-C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
-
-=item *
-
-C<LINKTYPE: dynamic>
-
-=item *
-
-C<VERSION: 0.25>
-
-=item *
-
-C<EXE_FILES: >
-
-=back
-
-=head2 Sat Apr 19 09:31:43 2025: C<Module> L<Test::Pod|Test::Pod>
-
-=over 4
-
-=item *
-
-C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
-
-=item *
-
-C<LINKTYPE: dynamic>
-
-=item *
-
-C<VERSION: 1.52>
-
-=item *
-
-C<EXE_FILES: >
-
-=back
-
-=head2 Sat Apr 19 09:31:44 2025: C<Module> L<Dotenv|Dotenv>
-
-=over 4
-
-=item *
-
-C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
-
-=item *
-
-C<LINKTYPE: dynamic>
-
-=item *
-
-C<VERSION: 0.002>
-
-=item *
-
-C<EXE_FILES: >
-
-=back
-
-=head2 Sat Apr 19 09:41:20 2025: C<Module> L<File::ShareDir::Install|File::ShareDir::Install>
+=head2 Sat Apr 19 12:08:30 2025: C<Module> L<File::ShareDir::Install|File::ShareDir::Install>
 
 =over 4
 
@@ -196,7 +20,7 @@ C<EXE_FILES: >
 
 =back
 
-=head2 Sat Apr 19 09:41:24 2025: C<Module> L<Term::Table|Term::Table>
+=head2 Sat Apr 19 12:08:33 2025: C<Module> L<Term::Table|Term::Table>
 
 =over 4
 
@@ -218,7 +42,7 @@ C<EXE_FILES: >
 
 =back
 
-=head2 Sat Apr 19 09:41:51 2025: C<Module> L<Test::Simple|Test::Simple>
+=head2 Sat Apr 19 12:09:00 2025: C<Module> L<Test::Simple|Test::Simple>
 
 =over 4
 
@@ -240,7 +64,7 @@ C<EXE_FILES: >
 
 =back
 
-=head2 Sat Apr 19 09:41:55 2025: C<Module> L<Test::Warnings|Test::Warnings>
+=head2 Sat Apr 19 12:09:04 2025: C<Module> L<Test::Warnings|Test::Warnings>
 
 =over 4
 
@@ -262,7 +86,7 @@ C<EXE_FILES: >
 
 =back
 
-=head2 Sat Apr 19 09:41:55 2025: C<Module> L<File::Slurper|File::Slurper>
+=head2 Sat Apr 19 12:09:04 2025: C<Module> L<File::Slurper|File::Slurper>
 
 =over 4
 
@@ -284,7 +108,7 @@ C<EXE_FILES: >
 
 =back
 
-=head2 Sat Apr 19 09:41:56 2025: C<Module> L<Net::Amazon::Signature::V4|Net::Amazon::Signature::V4>
+=head2 Sat Apr 19 12:09:05 2025: C<Module> L<Net::Amazon::Signature::V4|Net::Amazon::Signature::V4>
 
 =over 4
 
@@ -306,73 +130,7 @@ C<EXE_FILES: >
 
 =back
 
-=head2 Sat Apr 19 09:41:57 2025: C<Module> L<Class::Accessor|Class::Accessor>
-
-=over 4
-
-=item *
-
-C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
-
-=item *
-
-C<LINKTYPE: dynamic>
-
-=item *
-
-C<VERSION: 0.51>
-
-=item *
-
-C<EXE_FILES: >
-
-=back
-
-=head2 Sat Apr 19 09:42:00 2025: C<Module> L<HTTP::Date|HTTP::Date>
-
-=over 4
-
-=item *
-
-C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
-
-=item *
-
-C<LINKTYPE: dynamic>
-
-=item *
-
-C<VERSION: 6.06>
-
-=item *
-
-C<EXE_FILES: >
-
-=back
-
-=head2 Sat Apr 19 09:42:11 2025: C<Module> L<Test::RequiresInternet|Test::RequiresInternet>
-
-=over 4
-
-=item *
-
-C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
-
-=item *
-
-C<LINKTYPE: dynamic>
-
-=item *
-
-C<VERSION: 0.05>
-
-=item *
-
-C<EXE_FILES: >
-
-=back
-
-=head2 Sat Apr 19 09:42:14 2025: C<Module> L<Test::Needs|Test::Needs>
+=head2 Sat Apr 19 12:09:08 2025: C<Module> L<Test::Needs|Test::Needs>
 
 =over 4
 
@@ -394,535 +152,7 @@ C<EXE_FILES: >
 
 =back
 
-=head2 Sat Apr 19 09:42:18 2025: C<Module> L<Test::Deep|Test::Deep>
-
-=over 4
-
-=item *
-
-C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
-
-=item *
-
-C<LINKTYPE: dynamic>
-
-=item *
-
-C<VERSION: 1.205>
-
-=item *
-
-C<EXE_FILES: >
-
-=back
-
-=head2 Sat Apr 19 09:42:19 2025: C<Module> L<Test::Requires|Test::Requires>
-
-=over 4
-
-=item *
-
-C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
-
-=item *
-
-C<LINKTYPE: dynamic>
-
-=item *
-
-C<VERSION: 0.11>
-
-=item *
-
-C<EXE_FILES: >
-
-=back
-
-=head2 Sat Apr 19 09:42:20 2025: C<Module> L<HTTP::CookieJar|HTTP::CookieJar>
-
-=over 4
-
-=item *
-
-C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
-
-=item *
-
-C<LINKTYPE: dynamic>
-
-=item *
-
-C<VERSION: 0.014>
-
-=item *
-
-C<EXE_FILES: >
-
-=back
-
-=head2 Sat Apr 19 09:42:22 2025: C<Module> L<HTTP::Cookies|HTTP::Cookies>
-
-=over 4
-
-=item *
-
-C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
-
-=item *
-
-C<LINKTYPE: dynamic>
-
-=item *
-
-C<VERSION: 6.11>
-
-=item *
-
-C<EXE_FILES: >
-
-=back
-
-=head2 Sat Apr 19 09:42:25 2025: C<Module> L<Net::HTTP|Net::HTTP>
-
-=over 4
-
-=item *
-
-C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
-
-=item *
-
-C<LINKTYPE: dynamic>
-
-=item *
-
-C<VERSION: 6.23>
-
-=item *
-
-C<EXE_FILES: >
-
-=back
-
-=head2 Sat Apr 19 09:42:28 2025: C<Module> L<ExtUtils::Config|ExtUtils::Config>
-
-=over 4
-
-=item *
-
-C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
-
-=item *
-
-C<LINKTYPE: dynamic>
-
-=item *
-
-C<VERSION: 0.010>
-
-=item *
-
-C<EXE_FILES: >
-
-=back
-
-=head2 Sat Apr 19 09:42:29 2025: C<Module> L<ExtUtils::Helpers|ExtUtils::Helpers>
-
-=over 4
-
-=item *
-
-C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
-
-=item *
-
-C<LINKTYPE: dynamic>
-
-=item *
-
-C<VERSION: 0.028>
-
-=item *
-
-C<EXE_FILES: >
-
-=back
-
-=head2 Sat Apr 19 09:42:31 2025: C<Module> L<ExtUtils::InstallPaths|ExtUtils::InstallPaths>
-
-=over 4
-
-=item *
-
-C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
-
-=item *
-
-C<LINKTYPE: dynamic>
-
-=item *
-
-C<VERSION: 0.014>
-
-=item *
-
-C<EXE_FILES: >
-
-=back
-
-=head2 Sat Apr 19 09:42:41 2025: C<Module> L<WWW::RobotRules|WWW::RobotRules>
-
-=over 4
-
-=item *
-
-C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
-
-=item *
-
-C<LINKTYPE: dynamic>
-
-=item *
-
-C<VERSION: 6.02>
-
-=item *
-
-C<EXE_FILES: >
-
-=back
-
-=head2 Sat Apr 19 09:42:42 2025: C<Module> L<Test::Fatal|Test::Fatal>
-
-=over 4
-
-=item *
-
-C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
-
-=item *
-
-C<LINKTYPE: dynamic>
-
-=item *
-
-C<VERSION: 0.017>
-
-=item *
-
-C<EXE_FILES: >
-
-=back
-
-=head2 Sat Apr 19 09:42:43 2025: C<Module> L<HTTP::Negotiate|HTTP::Negotiate>
-
-=over 4
-
-=item *
-
-C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
-
-=item *
-
-C<LINKTYPE: dynamic>
-
-=item *
-
-C<VERSION: 6.01>
-
-=item *
-
-C<EXE_FILES: >
-
-=back
-
-=head2 Sat Apr 19 09:42:47 2025: C<Module> L<File::Listing|File::Listing>
-
-=over 4
-
-=item *
-
-C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
-
-=item *
-
-C<LINKTYPE: dynamic>
-
-=item *
-
-C<VERSION: 6.16>
-
-=item *
-
-C<EXE_FILES: >
-
-=back
-
-=head2 Sat Apr 19 09:43:13 2025: C<Module> L<LWP|LWP>
-
-=over 4
-
-=item *
-
-C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
-
-=item *
-
-C<LINKTYPE: dynamic>
-
-=item *
-
-C<VERSION: 6.78>
-
-=item *
-
-C<EXE_FILES: bin/lwp-download bin/lwp-dump bin/lwp-mirror bin/lwp-request>
-
-=back
-
-=head2 Sat Apr 19 09:43:13 2025: C<Module> L<Digest::MD5::File|Digest::MD5::File>
-
-=over 4
-
-=item *
-
-C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
-
-=item *
-
-C<LINKTYPE: dynamic>
-
-=item *
-
-C<VERSION: 0.08>
-
-=item *
-
-C<EXE_FILES: >
-
-=back
-
-=head2 Sat Apr 19 09:43:14 2025: C<Module> L<Digest::HMAC|Digest::HMAC>
-
-=over 4
-
-=item *
-
-C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
-
-=item *
-
-C<LINKTYPE: dynamic>
-
-=item *
-
-C<VERSION: 1.05>
-
-=item *
-
-C<EXE_FILES: >
-
-=back
-
-=head2 Sat Apr 19 09:43:53 2025: C<Module> L<LWP::UserAgent::Determined|LWP::UserAgent::Determined>
-
-=over 4
-
-=item *
-
-C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
-
-=item *
-
-C<LINKTYPE: dynamic>
-
-=item *
-
-C<VERSION: 1.07>
-
-=item *
-
-C<EXE_FILES: >
-
-=back
-
-=head2 Sat Apr 19 09:43:55 2025: C<Module> L<XML::NamespaceSupport|XML::NamespaceSupport>
-
-=over 4
-
-=item *
-
-C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
-
-=item *
-
-C<LINKTYPE: dynamic>
-
-=item *
-
-C<VERSION: 1.12>
-
-=item *
-
-C<EXE_FILES: >
-
-=back
-
-=head2 Sat Apr 19 09:43:58 2025: C<Module> L<XML::SAX::Base|XML::SAX::Base>
-
-=over 4
-
-=item *
-
-C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
-
-=item *
-
-C<LINKTYPE: dynamic>
-
-=item *
-
-C<VERSION: 1.09>
-
-=item *
-
-C<EXE_FILES: >
-
-=back
-
-=head2 Sat Apr 19 09:43:59 2025: C<Module> L<XML::SAX|XML::SAX>
-
-=over 4
-
-=item *
-
-C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
-
-=item *
-
-C<LINKTYPE: dynamic>
-
-=item *
-
-C<VERSION: 1.02>
-
-=item *
-
-C<EXE_FILES: >
-
-=back
-
-=head2 Sat Apr 19 09:44:04 2025: C<Module> L<XML::Parser|XML::Parser>
-
-=over 4
-
-=item *
-
-C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
-
-=item *
-
-C<LINKTYPE: dynamic>
-
-=item *
-
-C<VERSION: 2.47>
-
-=item *
-
-C<EXE_FILES: >
-
-=back
-
-=head2 Sat Apr 19 09:44:04 2025: C<Module> L<XML::SAX::Expat|XML::SAX::Expat>
-
-=over 4
-
-=item *
-
-C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
-
-=item *
-
-C<LINKTYPE: dynamic>
-
-=item *
-
-C<VERSION: 0.51>
-
-=item *
-
-C<EXE_FILES: >
-
-=back
-
-=head2 Sat Apr 19 09:44:16 2025: C<Module> L<XML::Simple|XML::Simple>
-
-=over 4
-
-=item *
-
-C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
-
-=item *
-
-C<LINKTYPE: dynamic>
-
-=item *
-
-C<VERSION: 2.25>
-
-=item *
-
-C<EXE_FILES: >
-
-=back
-
-=head2 Sat Apr 19 09:44:37 2025: C<Module> L<Capture::Tiny|Capture::Tiny>
-
-=over 4
-
-=item *
-
-C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
-
-=item *
-
-C<LINKTYPE: dynamic>
-
-=item *
-
-C<VERSION: 0.50>
-
-=item *
-
-C<EXE_FILES: >
-
-=back
-
-=head2 Sat Apr 19 09:44:39 2025: C<Module> L<Test::Output|Test::Output>
-
-=over 4
-
-=item *
-
-C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
-
-=item *
-
-C<LINKTYPE: dynamic>
-
-=item *
-
-C<VERSION: 1.036>
-
-=item *
-
-C<EXE_FILES: >
-
-=back
-
-=head2 Sat Apr 19 09:44:57 2025: C<Module> L<Net::SSLeay|Net::SSLeay>
+=head2 Sat Apr 19 12:09:26 2025: C<Module> L<Net::SSLeay|Net::SSLeay>
 
 =over 4
 
@@ -944,7 +174,7 @@ C<EXE_FILES: >
 
 =back
 
-=head2 Sat Apr 19 09:45:48 2025: C<Module> L<IO::Socket::SSL|IO::Socket::SSL>
+=head2 Sat Apr 19 12:10:18 2025: C<Module> L<IO::Socket::SSL|IO::Socket::SSL>
 
 =over 4
 
@@ -966,7 +196,7 @@ C<EXE_FILES: >
 
 =back
 
-=head2 Sat Apr 19 09:45:50 2025: C<Module> L<LWP::Protocol::https|LWP::Protocol::https>
+=head2 Sat Apr 19 12:10:29 2025: C<Module> L<Test::RequiresInternet|Test::RequiresInternet>
 
 =over 4
 
@@ -980,7 +210,7 @@ C<LINKTYPE: dynamic>
 
 =item *
 
-C<VERSION: 6.14>
+C<VERSION: 0.05>
 
 =item *
 
@@ -988,7 +218,7 @@ C<EXE_FILES: >
 
 =back
 
-=head2 Sat Apr 19 09:45:51 2025: C<Module> L<Amazon::S3|Amazon::S3>
+=head2 Sat Apr 19 12:10:31 2025: C<Module> L<HTTP::Negotiate|HTTP::Negotiate>
 
 =over 4
 
@@ -1002,7 +232,205 @@ C<LINKTYPE: dynamic>
 
 =item *
 
-C<VERSION: 0.61>
+C<VERSION: 6.01>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Sat Apr 19 12:10:37 2025: C<Module> L<WWW::RobotRules|WWW::RobotRules>
+
+=over 4
+
+=item *
+
+C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 6.02>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Sat Apr 19 12:10:42 2025: C<Module> L<Test::Deep|Test::Deep>
+
+=over 4
+
+=item *
+
+C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.205>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Sat Apr 19 12:10:43 2025: C<Module> L<Test::Requires|Test::Requires>
+
+=over 4
+
+=item *
+
+C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.11>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Sat Apr 19 12:10:44 2025: C<Module> L<HTTP::Date|HTTP::Date>
+
+=over 4
+
+=item *
+
+C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 6.06>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Sat Apr 19 12:10:45 2025: C<Module> L<HTTP::CookieJar|HTTP::CookieJar>
+
+=over 4
+
+=item *
+
+C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.014>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Sat Apr 19 12:10:49 2025: C<Module> L<File::Listing|File::Listing>
+
+=over 4
+
+=item *
+
+C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 6.16>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Sat Apr 19 12:10:53 2025: C<Module> L<ExtUtils::Config|ExtUtils::Config>
+
+=over 4
+
+=item *
+
+C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.010>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Sat Apr 19 12:10:53 2025: C<Module> L<ExtUtils::InstallPaths|ExtUtils::InstallPaths>
+
+=over 4
+
+=item *
+
+C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.014>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Sat Apr 19 12:10:54 2025: C<Module> L<ExtUtils::Helpers|ExtUtils::Helpers>
+
+=over 4
+
+=item *
+
+C<installed into: /home/pnel/repos/perl-web-scraper/local/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.028>
 
 =item *
 
