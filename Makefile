@@ -1,7 +1,10 @@
-.PHONY: install clean fetch parse all
+.PHONY: install test clean fetch parse all
 
 install:
 	cpanm --installdeps --local-lib=./local .
+
+test:
+	prove -l t
 
 clean:
 	rm -rf local
