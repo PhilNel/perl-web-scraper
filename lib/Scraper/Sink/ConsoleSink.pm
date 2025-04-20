@@ -17,6 +17,8 @@ sub write_jobs {
         my $title      = $job->{title}      // '[Unknown Title]';
         print "📌 $department → $title\n";
     }
+
+    return;
 }
 
-return 1;
+1;

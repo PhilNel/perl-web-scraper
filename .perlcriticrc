@@ -1,0 +1,7 @@
+# Enforce generally clean, modern Perl
+severity = 4
+theme = core
+
+# Enforce 'use warnings', 'use strict'
+[TestingAndDebugging::RequireUseStrict]
+[TestingAndDebugging::RequireUseWarnings]

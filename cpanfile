@@ -9,3 +9,4 @@ requires 'LWP::UserAgent', '== 6.78';
 
 # Dev Dependencies
 requires 'Dotenv', '== 0.002';
+requires 'Perl::Critic', '== 1.156';

@@ -1,3 +1,4 @@
+## no critic (Modules::RequireExplicitPackage)
 use strict;
 use warnings;
 use FindBin;
@@ -17,3 +18,5 @@ my @jobs = $parser->parse_jobs($html_content);
 
 my $sink = Scraper::Sink::ConsoleSink->new;
 $sink->write_jobs(@jobs);
+
+1;

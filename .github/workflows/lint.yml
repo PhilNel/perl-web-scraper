@@ -1,0 +1,26 @@
+name: Lint
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+    branches: ['**']
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Perl
+      uses: shogo82148/actions-setup-perl@v1
+      with:
+        perl-version: '5.34'
+
+    - name: Install Perl::Critic
+      run: cpanm --quiet --notest Perl::Critic
+
+    - name: Lint
+      run: perlcritic --profile .perlcriticrc lib/ main.pl
