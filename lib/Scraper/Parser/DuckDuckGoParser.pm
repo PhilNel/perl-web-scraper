@@ -42,4 +42,4 @@ sub parse_jobs {
     return @jobs;
 }
 
-return 1;
+1;
