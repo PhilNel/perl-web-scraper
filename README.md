@@ -8,13 +8,13 @@ This component pairs with [node-web-fetcher](https://github.com/PhilNel/node-web
 
 ## 🛠 Installation
 
-All dependencies are vendored locally. You do not need to install system-wide Perl modules.
-
-To reset and reinstall:
+Run the following command to install all required Perl modules into a local directory (local/lib/perl5):
 
 ```bash
-make clean install
+make install
 ```
+
+This uses `cpanm` to install the modules defined in the `cpanfile` without polluting the global Perl environment.
 
 This installs all required dependencies into `./local` based on the `cpanfile`.
 
@@ -27,17 +27,24 @@ Make sure the `node-web-fetcher project` is available and has run to produce ren
 Run the full flow:
 
 ```perl
-perl main.pl
+PERL5LIB=local/lib/perl5 perl main.pl
 ```
 
 Or use `make`:
+
 ```make
 make parse
 ```
 
 ## 🔧 Dependencies
 
+Runtime:
 - Moo — Lightweight object system for clean OOP
 - Mojo::DOM — HTML parsing
 - Carp — Better error reporting
 - Role::Tiny — Composable interface-style roles for enforcing structure across components
+- Amazon::S3 — For fetching the scraped HTML that must be parsed
+
+Dev only:
+- Dotenv — Locads local environment variables
+- Perl::Critic — For linting the project source code

@@ -1,7 +1,7 @@
 .PHONY: install test lint clean fetch parse all
 
 install:
-	cpanm --installdeps --local-lib=./local .
+	cpanm --installdeps --notest --local-lib=./local .
 
 test:
 	PERL5LIB=local/lib/perl5 prove -l t
