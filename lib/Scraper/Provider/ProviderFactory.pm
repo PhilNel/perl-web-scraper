@@ -1,4 +1,4 @@
-package Scraper::Factory::ProviderFactory;
+package Scraper::Provider::ProviderFactory;
 
 use Moo;
 use Carp;

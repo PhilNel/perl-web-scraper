@@ -26,11 +26,21 @@ has aws_secret_access_key => (
     default => sub { $ENV{AWS_SECRET_ACCESS_KEY} },
 );
 
+has aws_session_token => (
+    is      => 'ro',
+    default => sub { $ENV{AWS_SESSION_TOKEN} },
+);
+
 has aws_region => (
     is      => 'ro',
     default => sub {
         return $ENV{AWS_REGION} // 'af-south-1';
     },
+);
+
+has debug => (
+    is      => 'ro',
+    default => sub { $ENV{ENABLE_DEBUG} // 0 },
 );
 
 1;

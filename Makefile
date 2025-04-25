@@ -1,4 +1,12 @@
-.PHONY: install test lint clean fetch parse all
+.PHONY: install test lint clean fetch parse push login publish
+
+VERSION := $(shell date +"%Y%m%d-%H%M")-$(shell git rev-parse --short HEAD)
+
+# Docker settings
+APP_NAME = parser-lambda
+AWS_REGION = af-south-1
+AWS_ACCOUNT_ID = 107335506223
+ECR_REPO = $(AWS_ACCOUNT_ID).dkr.ecr.$(AWS_REGION).amazonaws.com/$(APP_NAME)
 
 install:
 	cpanm --installdeps --notest --local-lib=./local .
@@ -16,6 +24,19 @@ fetch:
 	cd ../node-web-fetcher && npm run fetch
 
 parse:
-	PERL5LIB=local/lib/perl5 perl main.pl
+	PERL5LIB=local/lib/perl5 perl -Ilib main.pl
 
-all: clean install test lint fetch parse
+build:
+	docker build -t $(APP_NAME):$(VERSION) .
+
+tag:
+	docker tag $(APP_NAME):$(VERSION) $(ECR_REPO):$(VERSION)
+
+push: login
+	docker push $(ECR_REPO):$(VERSION)
+
+login:
+	aws ecr get-login-password --region $(AWS_REGION) | docker login --username AWS --password-stdin $(AWS_ACCOUNT_ID).dkr.ecr.$(AWS_REGION).amazonaws.com
+
+publish: build tag push 
+	@echo "Pubished version: $(VERSION)"
