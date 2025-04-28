@@ -41,7 +41,7 @@ make parse
 Runtime:
 - Moo — Lightweight object system for clean OOP
 - Mojo::DOM — HTML parsing
-- Carp — Better error reporting
+- JSON — JSON encoding
 - Role::Tiny — Composable interface-style roles for enforcing structure across components
 - Amazon::S3 — For fetching the scraped HTML that must be parsed
 
