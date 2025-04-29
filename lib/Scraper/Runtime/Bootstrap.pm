@@ -6,6 +6,10 @@ use IO::Handle;
 use FindBin;
 use lib "$FindBin::Bin/lib";
 
+use Scraper::Logger::Factory;
+
+my $log = Scraper::Logger::Factory->get_logger('Bootstrap');
+
 sub initialize {
 
     # Force unbuffered output for correct log ordering
@@ -13,10 +17,10 @@ sub initialize {
     STDERR->autoflush(1);
 
     if (!defined $ENV{PERL5LIB}) {
-        print STDERR "[Bootstrap] WARNING: PERL5LIB not set. Proceeding anyway.\n";
+        $log->warning('PERL5LIB not set. Proceeding anyway');
     }
 
-    print STDERR "[Bootstrap] Environment initialization complete.\n";
+    $log->info('Environment initialization complete');
     
     return;
 }

@@ -3,17 +3,20 @@ package Scraper::Runner::LocalRunner;
 use Moo;
 with 'Scraper::Runner::JobRunner';
 
+use Scraper::Logger::Factory;
 use Scraper::Handler::HandlerFactory;
+
+my $log = Scraper::Logger::Factory->get_logger('LocalRunner');
 
 sub run {
     my $self = shift;
 
-    print STDERR "[LocalRunner] Running locally...\n";
+    $log->info("Running locally");
 
     my $handler = Scraper::Handler::HandlerFactory::build_handler();
     $handler->handle({});  # Local dummy event
 
-    print STDERR "[LocalRunner] Job completed successfully.\n";
+    $log->info("Job completed successfully");
     
     return;
 }
