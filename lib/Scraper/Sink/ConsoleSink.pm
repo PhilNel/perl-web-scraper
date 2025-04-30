@@ -4,18 +4,20 @@ use Moo;
 
 with 'Scraper::Sink::JobSink';
 
+my $log = Scraper::Logger::Factory->get_logger('ConsoleSink');
+
 sub write_jobs {
     my ($self, @jobs) = @_;
 
     if (!@jobs) {
-        print "[INFO] No jobs to write.\n";
+        $log->info("Not jobs to write");
         return;
     }
 
     for my $job (@jobs) {
         my $department = $job->{department} // '[Unknown Department]';
         my $title      = $job->{title}      // '[Unknown Title]';
-        print "📌 $department → $title\n";
+        $log->info("📌 $department → $title");
     }
 
     return;

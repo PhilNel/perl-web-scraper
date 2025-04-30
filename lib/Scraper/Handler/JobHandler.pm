@@ -17,16 +17,19 @@ has sink => (
     required => 1
 );
 
+my $log = Scraper::Logger::Factory->get_logger('JobHandler');
+
 sub handle {
     my ($self, $event) = @_;
 
-    print STDERR "[Handler] Starting...\n";
+
+    $log->info("Starting");
 
     my $html_content = $self->provider->get_html;
     my @jobs = $self->parser->parse_jobs($html_content);
     $self->sink->write_jobs(@jobs);
 
-    print STDERR "[Handler] Completed.\n";
+    $log->info("Completed");
 
     return;
 }

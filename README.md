@@ -26,12 +26,6 @@ Make sure the `node-web-fetcher project` is available and has run to produce ren
 
 Run the full flow:
 
-```perl
-PERL5LIB=local/lib/perl5 perl main.pl
-```
-
-Or use `make`:
-
 ```make
 make parse
 ```
@@ -44,6 +38,7 @@ Runtime:
 - JSON — JSON encoding
 - Role::Tiny — Composable interface-style roles for enforcing structure across components
 - Amazon::S3 — For fetching the scraped HTML that must be parsed
+- Log::Log4perl — Application logs
 
 Dev only:
 - Dotenv — Locads local environment variables
