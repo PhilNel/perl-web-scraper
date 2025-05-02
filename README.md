@@ -6,6 +6,8 @@ It is designed to be both locally testable and cloud-deployable (e.g., on AWS La
 
 This component pairs with [node-web-fetcher](https://github.com/PhilNel/node-web-fetcher).
 
+📚 **Documentation:** [https://philnel.github.io/docs-web-scraper](https://philnel.github.io/docs-web-scraper)
+
 ## 🛠 Installation
 
 Run the following command to install all required Perl modules into a local directory (local/lib/perl5):
