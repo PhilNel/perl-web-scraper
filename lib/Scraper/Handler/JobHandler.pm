@@ -1,6 +1,7 @@
 package Scraper::Handler::JobHandler;
 
 use Moo;
+use Scraper::Logger::Factory;
 
 has provider => (
     is => 'ro',
