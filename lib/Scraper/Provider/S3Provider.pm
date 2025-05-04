@@ -3,7 +3,7 @@ package Scraper::Provider::S3Provider;
 use Moo;
 with 'Scraper::Provider::JobProvider';
 
-use Amazon::S3;
+use Paws;
 use Carp;
 use Scraper::Config::S3;
 
@@ -21,17 +21,8 @@ sub _build_s3_client {
     my ($self) = @_;
 
     my $region = $self->config->aws_region;
-    my $debug  = $self->config->debug ? 1 : 0;
 
-    return  Amazon::S3->new({
-        aws_access_key_id     => $self->config->aws_access_key_id,
-        aws_secret_access_key => $self->config->aws_secret_access_key,
-        token                 => $self->config->aws_session_token,
-        host                  => "s3.$region.amazonaws.com",
-        region                => $self->config->aws_region,
-        entry                 => 1,
-        debug                 => $debug,
-    });
+    return Paws->service('S3', region => $region);
 }
 
 sub get_html {
@@ -42,21 +33,20 @@ sub get_html {
     my $bucket_key = $self->config->provider_s3_bucket_key
         or croak "Missing PROVIDER_S3_BUCKET_KEY";
 
-    my $bucket = $self->s3_client->bucket($bucket_name); 
-
-    unless ($bucket) {
-        croak "[S3Provider] Failed to get bucket handle for [$bucket_name]";
+    my $resp = $self->s3_client->GetObject(
+        Bucket => $bucket_name,
+        Key    => $bucket_key,
+    );
+    unless ($resp) {
+        croak "[S3Provider] Failed to fetch S3 object [$bucket_name/$bucket_key]: $@";
     }
 
-    my $html_content = $bucket->get_key($bucket_key);
-
-    unless ($html_content) {
-        croak "[S3Provider] Failed to fetch S3 object [$bucket_name/$bucket_key]";
+    my $html_content = $resp->Body;
+    unless (defined $html_content) {
+        croak "[S3Provider] S3 object [$bucket_name/$bucket_key] is empty or unreadable";
     }
 
-    croak "Failed to fetch S3 object [$bucket_name/$bucket_key]" unless $html_content;
-
-    return $html_content->{value};
+    return $html_content;
 }
 
 1;

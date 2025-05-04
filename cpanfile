@@ -3,7 +3,6 @@ requires 'Moo', '== 2.005005';
 requires 'Role::Tiny', '== 2.002004';
 requires 'JSON', '== 4.10';
 requires 'Log::Log4perl', '== 1.57';
-requires 'Amazon::S3', '== 0.61';
 requires 'Paws', '== 0.46';
 
 # Dev Dependencies
