@@ -1,6 +1,8 @@
 package Scraper::Provider::S3Provider;
 
 use Moo;
+with 'Scraper::Provider::JobProvider';
+
 use Amazon::S3;
 use Carp;
 use Scraper::Config::S3;

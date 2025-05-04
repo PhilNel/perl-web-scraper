@@ -1,8 +1,9 @@
 package Scraper::Sink::ConsoleSink;
 
 use Moo;
-
 with 'Scraper::Sink::JobSink';
+
+use Scraper::Logger::Factory;
 
 my $log = Scraper::Logger::Factory->get_logger('ConsoleSink');
 

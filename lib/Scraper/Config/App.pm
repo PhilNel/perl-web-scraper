@@ -9,4 +9,9 @@ has provider_type => (
     default => sub { $ENV{SCRAPER_PROVIDER_TYPE} // 'file' },
 );
 
+has sink_type => (
+    is      => 'ro',
+    default => sub { $ENV{SCRAPER_SINK_TYPE} // 'console' },
+);
+
 1;
