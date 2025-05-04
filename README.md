@@ -39,7 +39,7 @@ Runtime:
 - Mojo::DOM — HTML parsing
 - JSON — JSON encoding
 - Role::Tiny — Composable interface-style roles for enforcing structure across components
-- Amazon::S3 — For fetching the scraped HTML that must be parsed
+- Paws — AWS components
 - Log::Log4perl — Application logs
 
 Dev only:

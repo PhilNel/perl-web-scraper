@@ -18,7 +18,7 @@ sub parse_jobs {
     })->each;
 
     for my $department_element (@department_elements) {
-        my $department_name = $department_element->all_text;
+        my $department_name = $department_element->all_text // '';
         my $next_element    = $department_element->next;
 
         while ($next_element) {
@@ -33,6 +33,7 @@ sub parse_jobs {
             push @jobs, {
                 department => $department_name,
                 title      => $job_title,
+                company    => "DuckDuckGo",
             };
 
             $next_element = $next_element->next;

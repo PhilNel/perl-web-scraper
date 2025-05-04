@@ -16,21 +16,6 @@ has provider_s3_bucket_key => (
     },
 );
 
-has aws_access_key_id => (
-    is      => 'ro',
-    default => sub { $ENV{AWS_ACCESS_KEY_ID} },
-);
-
-has aws_secret_access_key => (
-    is      => 'ro',
-    default => sub { $ENV{AWS_SECRET_ACCESS_KEY} },
-);
-
-has aws_session_token => (
-    is      => 'ro',
-    default => sub { $ENV{AWS_SESSION_TOKEN} },
-);
-
 has aws_region => (
     is      => 'ro',
     default => sub {
