@@ -4,6 +4,8 @@ use Mojo::DOM;
 use Moo;
 use Carp;
 
+use Scraper::Util::Text qw(trim);
+
 with 'Scraper::Parser::JobParser';
 
 sub parse_jobs {
@@ -18,7 +20,7 @@ sub parse_jobs {
     })->each;
 
     for my $department_element (@department_elements) {
-        my $department_name = $department_element->all_text // '';
+        my $department_name = trim($department_element->all_text // '');
         my $next_element    = $department_element->next;
 
         while ($next_element) {
@@ -28,7 +30,7 @@ sub parse_jobs {
             last unless $is_article_tag && $is_job_posting;
 
             my $title_element = $next_element->at('h3');
-            my $job_title     = $title_element ? $title_element->all_text : '[Unkown Title]';
+            my $job_title     = $title_element ? trim($title_element->all_text) : '[Unknown Title]';
 
             push @jobs, {
                 department => $department_name,
