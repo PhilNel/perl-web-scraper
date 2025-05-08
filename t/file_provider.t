@@ -1,9 +1,6 @@
 use strict;
 use warnings;
 use Test::More;
-use FindBin;
-use lib "$FindBin::Bin/../lib", "$FindBin::Bin/../local/lib/perl5";
-use File::Temp qw/tempfile/;
 
 use Scraper::Provider::LocalFileProvider;
 use Scraper::Config::File;
