@@ -1,8 +1,6 @@
 use strict;
 use warnings;
 use Test::More;
-use FindBin;
-use lib "$FindBin::Bin/../lib", "$FindBin::Bin/../local/lib/perl5";
 
 use Scraper::Parser::DuckDuckGoParser;
 

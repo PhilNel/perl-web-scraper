@@ -43,5 +43,5 @@ Runtime:
 - Log::Log4perl — Application logs
 
 Dev only:
-- Dotenv — Locads local environment variables
+- Dotenv — Loads local environment variables
 - Perl::Critic — For linting the project source code
