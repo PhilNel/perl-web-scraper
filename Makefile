@@ -3,7 +3,7 @@
 VERSION := $(shell date +"%Y%m%d-%H%M")-$(shell git rev-parse --short HEAD)
 
 # Docker settings
-APP_NAME = parser-lambda
+APP_NAME = perl-parser-lambda
 AWS_REGION = af-south-1
 AWS_ACCOUNT_ID = 107335506223
 ECR_REPO = $(AWS_ACCOUNT_ID).dkr.ecr.$(AWS_REGION).amazonaws.com/$(APP_NAME)
