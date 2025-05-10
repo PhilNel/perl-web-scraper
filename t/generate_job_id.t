@@ -5,11 +5,11 @@ use Test::More;
 use Scraper::Util::IdGenerator qw(generate_job_id);
 
 my $job = {
-    title      => 'Software Engineer',
-    department => 'Engineering',
+    title      => 'Senior Backend Engineer',
+    department => 'Engineering - Backend Engineering',
     company    => 'DuckDuckGo',
 };
-my $expected = '8a118a0579d79aafd2e59d1928adb5abeb55a8af899cb9aebdd8e3eecc569b4e';
+my $expected = 'f44efb505a4969fb0dcc565f95fbfd05ad822127c56ca3a63a31b441eb2c376a';
 
 my $actual = generate_job_id($job);
 
