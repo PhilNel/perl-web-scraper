@@ -6,6 +6,8 @@ with 'Scraper::Store::JobStore';
 use Paws;
 use Data::Dumper;
 use Carp;
+use DateTime;
+use DateTime::Format::ISO8601;
 use Scraper::Util::IdGenerator qw(generate_job_id);
 use Scraper::Config::Dynamo;
 
@@ -34,12 +36,14 @@ sub store_job {
     my ($self, $job) = @_;
 
     $job->{job_id} ||= generate_job_id($job);
+    my $now = DateTime->now( time_zone => 'UTC' );
 
     my $item = $self->_marshall_item({
-        job_id     => $job->{job_id},
-        title      => $job->{title},
-        department => $job->{department},
-        company    => $job->{company},
+        job_id      => $job->{job_id},
+        title       => $job->{title},
+        department  => $job->{department},
+        company     => $job->{company},
+        lastUpdated =>  $now->iso8601 . 'Z',
     });
 
     my $table_name = $self->config->store_table_name
