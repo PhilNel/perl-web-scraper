@@ -14,10 +14,19 @@ sub run {
     $log->info("Running locally");
 
     my $handler = Scraper::Handler::HandlerFactory::build_handler();
-    $handler->handle({});  # Local dummy event
+
+    my $mock_event = {
+        detail => {
+            object => {
+                key => 'duckduckgo/rendered.html',
+            },
+        }
+    };
+
+    $handler->handle($mock_event);
 
     $log->info("Job completed successfully");
-    
+
     return;
 }
 

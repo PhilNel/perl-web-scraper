@@ -26,24 +26,22 @@ sub _build_s3_client {
 }
 
 sub get_html {
-    my ($self) = @_;
+    my ($self, $path) = @_;
 
     my $bucket_name = $self->config->provider_s3_bucket_name
         or croak "Missing PROVIDER_S3_BUCKET_NAME";
-    my $bucket_key = $self->config->provider_s3_bucket_key
-        or croak "Missing PROVIDER_S3_BUCKET_KEY";
 
     my $resp = $self->s3_client->GetObject(
         Bucket => $bucket_name,
-        Key    => $bucket_key,
+        Key    => $path,
     );
     unless ($resp) {
-        croak "[S3Provider] Failed to fetch S3 object [$bucket_name/$bucket_key]: $@";
+        croak "[S3Provider] Failed to fetch S3 object [$bucket_name/$path]: $@";
     }
 
     my $html_content = $resp->Body;
     unless (defined $html_content) {
-        croak "[S3Provider] S3 object [$bucket_name/$bucket_key] is empty or unreadable";
+        croak "[S3Provider] S3 object [$bucket_name/$path] is empty or unreadable";
     }
 
     return $html_content;

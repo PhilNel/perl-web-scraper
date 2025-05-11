@@ -3,7 +3,6 @@ use warnings;
 use Test::More;
 
 use Scraper::Provider::LocalFileProvider;
-use Scraper::Config::File;
 
 sub create_temp_html_file {
     use File::Temp qw/tempfile/;
@@ -15,10 +14,9 @@ sub create_temp_html_file {
 }
 
 my $filename = create_temp_html_file();
-my $config   = Scraper::Config::File->new(html_path => $filename);
-my $provider = Scraper::Provider::LocalFileProvider->new(config => $config);
+my $provider = Scraper::Provider::LocalFileProvider->new();
 
-my $html = $provider->get_html;
+my $html = $provider->get_html($filename);
 
 ok(defined $html, 'HTML content was returned');
 like($html, qr/Hello from test/, 'HTML content matches expected string');

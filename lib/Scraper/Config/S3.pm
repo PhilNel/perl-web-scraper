@@ -9,13 +9,6 @@ has provider_s3_bucket_name => (
     default => sub { $ENV{PROVIDER_S3_BUCKET_NAME} },
 );
 
-has provider_s3_bucket_key => (
-    is      => 'ro',
-    default => sub {
-        return $ENV{PROVIDER_S3_BUCKET_KEY} // 'rendered.html';
-    },
-);
-
 has aws_region => (
     is      => 'ro',
     default => sub {
