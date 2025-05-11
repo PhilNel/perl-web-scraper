@@ -15,7 +15,6 @@ sub build_handler {
 
     return Scraper::Handler::JobHandler->new(
         provider => $provider,
-        parser   => $parser,
         sink     => $sink,
     );
 }

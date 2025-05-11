@@ -5,17 +5,10 @@ use Carp;
 
 with 'Scraper::Provider::JobProvider';
 
-has config => (
-    is      => 'ro',
-    default => sub { Scraper::Config::File->new },
-);
-
 sub get_html {
-    my ($self) = @_;
-    my $file_path = $self->config->html_path
-        or croak "Missing SCRAPER_HTML_PATH";
+    my ($self, $path) = @_;
 
-    open my $file_handle, '<', $file_path or croak "Could not open $file_path: $!";
+    open my $file_handle, '<', $path or croak "Could not open $path: $!";
     local $/; # Slurp mode to read entire file at once
     my $html_content = <$file_handle>;
     close $file_handle;
