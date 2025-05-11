@@ -18,7 +18,7 @@ sub run {
     my $mock_event = {
         detail => {
             object => {
-                key => 'duckduckgo/rendered.html',
+                key => 'posthog/rendered.html',
             },
         }
     };
